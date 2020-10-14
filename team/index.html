@@ -1,0 +1,70 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+ {% include head.html %}
+ <link href="/assets/css/team.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- header section -->
+  <header class="header-section">
+    <div class="header-content">
+      {% include navbar.html %}
+    </div>
+  </header>
+
+  <!-- main section  -->
+  <main class="main-section">
+    <div class="main-content container">
+      <div class="title-wrapper">
+        <h1 class="title">Komandamiz</h1>
+        <hr>
+      </div>
+	 
+      <div class="team-content">
+        <div class="team-member">
+          <img src="../assets/images/teamimg/ehtiman.png" />
+          <div class="team-member-hover">
+            <a href="/team/ehtiman-nuralizade" ><p class="hover-text">Ehtiman Nürəlizadə</p> </a>
+            <p class="hover-position">Həmtəsisçi</p>
+            <!--<div class="hover-social-media">
+              <a href="#">
+                <i class="hover-icons hover-facebook fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="hover-icons hover-linkedin fab fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="hover-icons hover-twitter fab fa-twitter"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="../assets/images/teamimg/nicad.png" />
+          <div class="team-member-hover">
+            <a href="/team/nijad-huseynov"><p class="hover-text">Nicad Hüseynov</p></a>
+            <p class="hover-position">Həmtəsisçi</p>
+            <div class="hover-social-media">
+              
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <!-- animation js  -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- script js  -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+$(document).ready(function () {
+
+
+  // toggle menu/navbar script
+  $(".menu-btn").click(function () {
+    $(".menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
+
+  // animation 
+  const sr = ScrollReveal({
+    origin: "bottom",
+    distance: "120px",
+    duration: 2000,
+    reset: true,
+  });
+
+  sr.reveal(".main-title", { delay: 700, opacity: 0.5 });
+  sr.reveal(".home-content", { delay: 700 });
+
+  
+  // selected category 
+  $(".option").click(function () {
+    if (!$(this).hasClass("selected")) {
+      $(this).toggleClass("selected");
+    }
+    else {
+      $(this).removeClass("selected");
+    }
+  });
+
+});

@@ -1,0 +1,38 @@
+{% assign maxRelated = 100 %}
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}
+
+{% for post in site.posts %}
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for category in post.categories %}
+      {% if post.url != page.url %}
+        {% if page.categories contains category %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+		
+		<div class="alike-post">
+		{% if post.video_link  %}
+			<img class="post-img" src="https://img.youtube.com/vi/{{post.video_link}}/mqdefault.jpg">
+		{% else %}
+			<img class="post-img"  src="{{post.background}}">
+		{% endif %}
+            <a href={{post.url}}><p class="alike-post-title">{{post.title}}</p> </a>      
+         </div>
+		
+		
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+
+  {% endfor %}
