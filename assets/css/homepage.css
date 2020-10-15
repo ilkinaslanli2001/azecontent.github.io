@@ -1,0 +1,297 @@
+
+/* main-section */
+
+.main-section {
+  background: url("../images/background1.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+
+.main-content {
+  padding: 15px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+  margin-top: 140px;
+  color: #fff;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+}
+
+.read-more-container {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.read-more-container i {
+  font-size: 35px;
+}
+
+/* search section */
+
+.search-section {
+  background-color: var(--primary);  
+  margin-bottom: 85px;
+}
+
+.search-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 16px;
+}
+
+.search-text {
+  color: #fff;
+  font-size: 19.5px;
+  font-weight: 500;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 507px;
+  height: 55px;
+  border-radius: 5px 0 0 5px;
+  padding: 14px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.subscribe-btn {
+  color: #fff;
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 14px 28px;
+  border: none;
+  width: 192px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* responsive media query */
+
+@media (max-width: 1300px) {
+  .main-title {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+  .search-text {
+    font-size: 17px;
+  }
+  .search-input {
+    width: 400px;
+  }
+  .subscribe-btn {
+    width: 150px;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1100px) {
+  .background-title {
+    font-size: 66px;
+  }
+}
+
+@media (max-width: 990px) {
+  .search-text {
+    font-size: 15px;
+  }
+  .search-row {
+    flex-direction: column;
+  }
+  .search-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .search-input {
+    width: 400px;
+  }
+  .subscribe-btn {
+    width: 150px;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .background {
+    height: 60vh;
+  }
+  .background-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .main-title {
+    font-size: 45px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main-title {
+    font-size: 35px;
+    letter-spacing: 0;
+  }
+  .read-more-container {
+    font-size: 16px;
+    bottom: -50px;
+  }
+  .read-more-container i {
+    font-size: 30px;
+  }
+  .background {
+    height: 50vh;
+  }
+  .background-title {
+    font-size: 40px;
+  }
+  .search-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .search-input {
+    height: 45px;
+    width: 300px;
+  }
+  .subscribe-btn {
+    width: 120px;
+    padding: 3px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 45px;
+  }
+}
+
+@media (max-width: 560px) {
+  .main-title {
+    font-size: 28px;
+    letter-spacing: 0;
+  }
+  .read-more-container {
+    font-size: 14px;
+    bottom: -80px;
+  }
+  .read-more-container i {
+    font-size: 27px;
+  }
+  .home-content {
+    padding-left: 0;
+  }
+  .post {
+    width: 100%;
+  }
+  .background {
+    height: 30vh;
+  }
+  .background-title {
+    font-size: 25px;
+  }
+  .search-text {
+    font-size: 16px;
+  }
+  .search-input {
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .subscribe-btn {
+    width: 110px;
+    padding: 5px 10px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .container {
+    padding: 0 10px;
+  }
+  .read-more-container {
+    font-size: 14px;
+    bottom: -90px;
+  }
+  .main-title {
+    font-size: 25px;
+  }
+  .custom-btn {
+    font-size: 18px;
+    padding: 8px 0;
+    width: 300px;
+  }
+  .search-text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .search-box {
+    margin-bottom: 30px;
+  }
+  .search-input {
+    width: 200px;
+    height: 35px;
+    font-size: 13px;
+  }
+  .subscribe-btn {
+    width: 90px;
+    padding: 3px 8px;
+    font-size: 12px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main-title {
+    font-size: 18px;
+  }
+  .read-more-container {
+    bottom: -110px;
+  }
+  .read-btn {
+    font-size: 18px;
+    padding: 3px 10px;
+    margin-right: 10px;
+  }
+  .custom-btn {
+    font-size: 15px;
+    padding: 5px 0;
+    width: 270px;
+  }
+
+  .search-text {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .search-box {
+    margin-bottom: 30px;
+  }
+  .search-input {
+    width: 180px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .subscribe-btn {
+    width: 70px;
+    padding: 3px 8px;
+    font-size: 8px;
+    height: 30px;
+  }
+}
